@@ -52,7 +52,7 @@
 
 ## Executive Summary
 
-Milwaukee's call center data reveals a critical backlog crisis masquerading as operational failure. Of 175,933 cases collected since April 2020, **58% remain unresolved** > This mighe seem like a service delivery problem. However, it's a **data tracking gap**.
+Milwaukee's call center data reveals a critical backlog crisis masquerading as operational failure. Of 175,933 cases collected since April 2020, **58% remain unresolved**. This mighe seem like a service delivery problem. However, it's a **data tracking gap**.
 
 **The Real Issue**: The 2020 COVID surge generated 138,267 cases (79% of all cases ever recorded), and 79,000+ were never properly closed in the system despite actual service completion. This legacy debt contaminates current performance metrics, creating false crisis optics.
 
@@ -124,7 +124,7 @@ Closure rate is DECLINING (43% → 30% in 6 months)
 **What we see:**
 - 2020 accounts for **78.6%** of ALL cases ever recorded (138,267 of 175,933)
 - COVID-era surge created 79,000+ cases that were never properly closed
-- The backlog isn't growing — it's LEGACY debt contaminating current metrics
+- The backlog isn't growing. It's LEGACY debt contaminating current metrics
 
 <img src="output/phase2_category/3_open_vs_closed_top10.png" width="70%">
 
@@ -173,7 +173,7 @@ graph LR
 
 ---
 
-# 📊 Supporting Analysis
+# Supporting Analysis
 
 ## Volume Patterns
 
@@ -202,7 +202,7 @@ graph LR
 | 🏘️ Code Enforcement | ~10,000 | 40-60% | Medium |
 ---
 
-## � Geographic Hotspots: Repeat Offender Addresses
+## Geographic Hotspots: Repeat Offender Addresses
 
 <img src="output/phase3_address/1_top_addresses_volume.png" width="70%">
 
@@ -242,17 +242,17 @@ graph LR
 
 ---
 
-# 📋 Appendix: Methodology & Data Quality
+# Appendix: Methodology & Data Quality
 
 ## Data Sources
 - `callcenterdatacurrent.csv` — 93 cases (Jan 1-4, 2026)
 - `callcenterdatahistorical.csv` — 175,840 cases (Mar 2020 - Dec 2025)
 
 ## Cleaning Applied
-- ✅ Removed 42 types of non-ASCII characters (emojis, curly quotes)
-- ✅ Normalized 5,152 embedded newlines
-- ✅ Standardized date formats to Python datetime
-- ✅ Cleaned 175,933 total records
+- Removed 42 types of non-ASCII characters (emojis, curly quotes)
+- Normalized 5,152 embedded newlines
+- Standardized date formats to Python datetime
+- Cleaned 175,933 total records
 
 ## Data Quality Notes
 - **No hourly granularity** — all timestamps at midnight
