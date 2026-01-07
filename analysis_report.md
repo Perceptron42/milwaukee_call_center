@@ -46,24 +46,24 @@
 | 2025 | 10,584 | 3,727 | 35.2% | 🔴 Declining |
 
 > [!CAUTION]
-> **Recent 6 months closure rate: 29.9%** — Performance is getting WORSE
+> **Recent 6 months closure rate: 29.9%** Performance is getting WORSE
 
 <img src="output/phase1_operational/4_closure_rate_trend.png" width="70%">
 
 ## Executive Summary
 
-Milwaukee's call center data reveals a critical backlog crisis masquerading as operational failure. Of 175,933 cases collected since April 2020, **58% remain unresolved**—but this isn't a service delivery problem, it's a **data tracking gap**.
+Milwaukee's call center data reveals a critical backlog crisis masquerading as operational failure. Of 175,933 cases collected since April 2020, **58% remain unresolved** > This mighe seem like a service delivery problem. However, it's a **data tracking gap**.
 
 **The Real Issue**: The 2020 COVID surge generated 138,267 cases (79% of all cases ever recorded), and 79,000+ were never properly closed in the system despite actual service completion. This legacy debt contaminates current performance metrics, creating false crisis optics.
 
 **Three Quick Wins**: 
-1. **Brush Pickup**: 11,070 open cases from completed seasonal services—close all requests >90 days old
-2. **Potholes**: 3,940 "open" cases but only 1.5% closure tracking—audit against DPW work orders to bulk close completed repairs
-3. **Garbage Carts**: 8,036 delivery confirmations never recorded—integrate with dispatch for auto-closure
+1. **Brush Pickup**: 11,070 open cases from completed seasonal services. We can close all requests >90 days old
+2. **Potholes**: 3,940 "open" cases but only 1.5% closure tracking. Audit against DPW work orders to bulk close completed repairs
+3. **Garbage Carts**: 8,036 delivery confirmations never recorded. Integrate with dispatch for auto-closure
 
-**Geographic Hotspots**: Just 220 addresses (0.3%) account for 2.4% of total cases, with 841 N Broadway alone generating 79 complaints. These repeat offenders warrant coordinated multi-department intervention.
+**Geographic Hotspots**: Just 220 addresses (0.3%) account for 2.4% of total cases, with 841 N Broadway alone generating 79 complaints. These repeat offenders warrant coordinated multi-department intervention. It could be they are big commercial properties with multiple service requests.
 
-**Bottom Line**: Performance isn't declining—feedback loops between field operations and call center systems are broken. The solution is process automation and system integration, not increased staffing.
+**Bottom Line**: Milwaukee's call center performance isn't declining. The feedback loops between field operations and call center systems are broken. The solution is process automation and system integration, not increased staffing.
 
 ---
 
@@ -83,7 +83,7 @@ Milwaukee's call center data reveals a critical backlog crisis masquerading as o
 **Impact: Clear 3,940 phantom open cases**
 
 - **Issue**: Only 62 of 4,002 pothole reports ever "closed" (1.5% rate)
-- **Reality**: Potholes ARE being fixed — just not updated in the system
+- **Reality**: I am assuming Potholes ARE being fixed and we are not updating the system since they may be taking longer than expected to complete.
 - **Action**: Cross-reference with DPW work orders; bulk close completed repairs
 - **Effort**: 1 week audit | **Impact**: Accurate infrastructure metrics
 
@@ -98,13 +98,13 @@ Milwaukee's call center data reveals a critical backlog crisis masquerading as o
 | Missing | 2,576 | 96.4% |
 | No Cart | 1,925 | 96.9% |
 
-- **Issue**: Cart deliveries happen within 1-2 weeks but cases never close
-- **Action**: Integrate with sanitation dispatch — auto-close after delivery confirmation
+- **Issue**: Cart deliveries happen within 1-2 weeks but cases never close. This is a good assumption that the cart was replaced when it was damaged or went missing.
+- **Action**: Integrate with sanitation dispatch to auto-close after delivery confirmation
 - **Effort**: System integration | **Impact**: 8% backlog reduction
 
 ---
 
-# 📖 The Story: What's Really Happening
+#  The Story: What's Really Happening
 
 ## The Problem
 ```
@@ -117,7 +117,7 @@ Closure rate is DECLINING (43% → 30% in 6 months)
 
 ## The Root Cause
 
-### 🗓️ 2020: The Year That Broke the System
+### 2020: The Year That Broke the System
 
 <img src="output/phase2_category/8_category_year_heatmap.png" width="70%">
 
@@ -273,9 +273,9 @@ graph LR
 ## Analysis Artifacts
 | File | Location |
 |------|----------|
-| Operational metrics | `output/phase1_operational/` |
-| Category analysis | `output/phase2_category/` |
-| Address analysis | `output/phase3_address/` |
+| Operational metrics | [`output/phase1_operational/`](output/phase1_operational/) |
+| Category analysis | [`output/phase2_category/`](output/phase2_category/) |
+| Address analysis | [`output/phase3_address/`](output/phase3_address/) |
 
 ---
 
